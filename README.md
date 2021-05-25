@@ -4,7 +4,7 @@
 - Chilena  
 - Ingeniero en Biotecnología  
 ## Descripción:
- - **CSASG_v2**
+  **CSASG_v2**
   - Nombre del Organismo: Salmo salar (Atlantic salmon)
   - Nombre inespecifico: Salmón Atlantico
   - Raza: aislado doble haploide 
@@ -26,13 +26,10 @@
  ## Estadisticas Globales
   
   |longitud de la secuencia total| 2,966,890,203|
-  |------------------------------|--------------|
   |Longitud total sin espacios   | 2,618,890,303|
-  |------------------------------|--------------|
   |Gaps entre andamios| 9,418|
-  |-------------------|------|
   |Número total de cromosomas y plásmidios| 30|
-  |----------------------------------|----------|
+  
 
 
 https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP318358
