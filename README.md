@@ -4,6 +4,7 @@
 - Chilena  
 - Ingeniero en Biotecnología  
 ## Descripción:
+
   **CSASG_v2**
   - Nombre del Organismo: Salmo salar (Atlantic salmon)
   - Nombre inespecifico: Salmón Atlantico
@@ -34,7 +35,6 @@
   |Número total de cromosomas y plásmidios| 30| 
   |----------------------------------|--------|
   
+### Especie selecionada: **Salmón del Atlántico**
 
-
-https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP318358
 
