@@ -35,8 +35,6 @@
   |Número total de cromosomas y plásmidios| 30| 
   |----------------------------------|--------|
   
-### Especie selecionada: **Salmón del Atlántico**
-
-## genoma de la especie salmon atlantico
+  ## prueba para clonar repositorio
 
 
