@@ -37,6 +37,6 @@
   
 ### Especie selecionada: **Salmón del Atlántico**
 
-##genoma de la especie
+##genoma de la especie salmon atlantico
 
 
