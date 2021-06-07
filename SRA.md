@@ -1,3 +1,17 @@
+## Descripción genómica de la especie salmón del Atlántico (*Salmo salar*)
+### - *CURSO DBT 972*
+### - *GENÉTICA Y GENÓMICA EN PRODUCCIÓN ANIMAL*
+
+### **Objetivos**
+#### Seleccionar una especie de interes comercial de la producción animal
+#### Buscar información de su genoma en  Assembly, Refseq y Bioproyectos en SRA
+
+### ** Descripción del trabajo realizado**
+#### Se Selecciono la especie de importancia económica en producción animal Salmón del Atlántico. Luego se buscó información de su genoma en Assembly y Refseq para resumir la  información genómica de interés en REDME del repositorio Git: GenomicsEducation/PaulaValenzuela. Posteriomente se busco información de Bioproyectos en SRA para el salmón del Atlántico. Por ultimo se descargo el metadata de las muestras en formato .txt
+
+### 1) Genoma del Samón del Atlántico en  Assembly, Refseq y Bioproyectos en SRA
+
+
 ### *Aceso* = Público
 ###*Fuente* = DNA(7,164)
              RNA(3,779)
