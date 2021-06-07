@@ -1,4 +1,4 @@
-# Título: ***Descripción genómica de la especie salmón del Atlántico (Salmo salar)***
+# ***Descripción genómica de la especie salmón del Atlántico (Salmo salar)***
 ### - CURSO DBT 972 (GENÉTICA Y GENÓMICA EN PRODUCCIÓN ANIMAL)
 ### Autor: 
 - Paula Valenzuela Aviés
@@ -41,39 +41,38 @@
  
 - 1.2) RefSeq
   **CSASG_v2**
-Aceso = Público
-Fuente =
+##3 Aceso = Público
+### Fuente =
 DNA(7,164)
 RNA(3,779)
-Type =
-genome(1,283)
+### Type =genome(1,283)
 
-Dispoción de la biblioteca =
+### Dispoción de la biblioteca =
 pares(6,805)
 simple(4,340)
 
-Plataformas=
--ABI SOLiD(31) 
--BGISEQ(13) 
--Capillary(321) 
--Illumina(10,514) 
--Ion Torrent(132) 
--LS454(11) 
--Oxford Nanopore(14) 
--PacBio SMRT(109)
+### Plataformas=
+-ABI SOLiD(31)   
+-BGISEQ(13)   
+-Capillary(321)   
+-Illumina(10,514)   
+-Ion Torrent(132)   
+-LS454(11)   
+-Oxford Nanopore(14)   
+-PacBio SMRT(109)  
 
-Estrategía=
+### Estrategía=
 -EpiGenomics(314) 
 -Exome(425)
 
-Genome(1,605)
-other(8,801)
-Tipo de fila=
+### Genome(1,605)
+### other(8,801)
+### Tipo de fila=
 -bam(394)
 
-fastq(9,009)
-sff(4)
-* Datos alineados* =(152)
+### fastq(9,009)
+### sff(4)
+### * Datos alineados* =(152)
 ### Link de accceso muestra *ERX4787613*
 ### Número de referencia de la Muestra= ERX4787613: HiSeq X Ten paired end sequencing; Raw reads: Library_IoA-00,Sample_IoA-00_9(A9)
 ### subido por =Institute of Aquaculture, University of Stirling, Stirling, UK (Institute of Aquaculture, University of Stirling, )
