@@ -3,3 +3,11 @@ nano script1.sh
 # !/bin/bash
 # Mi primer script
 echo Curso de Bioinformática
+
+
+nano script1.sh
+
+# !/bin/bash
+# Descarga y descomprime SRA Toolkit
+wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz
+tar -xzf sratoolkit.current-centos_linux64.tar.gz
