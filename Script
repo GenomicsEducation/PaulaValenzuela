@@ -1,0 +1,5 @@
+nano script1.sh
+
+# !/bin/bash
+# Mi primer script
+echo Curso de Bioinformática
