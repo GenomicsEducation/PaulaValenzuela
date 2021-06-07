@@ -10,7 +10,7 @@
 ### Se Selecciono la especie de importancia económica en producción animal Salmón del Atlántico. Luego se buscó información de su genoma en Assembly y Refseq para resumir la información genómica de interés en REDME del repositorio Git: GenomicsEducation/PaulaValenzuela. Posteriomente se busco información de Bioproyectos en SRA para el salmón del Atlántico. Por ultimo se descargo el metadata de las muestras en formato.txt
 
 ### 1) Genoma del Samón del Atlántico en Assembly, Refseq y Bioproyectos en SRA
-    - 1.1) Assembly
+- 1.1) Assembly
 
   **CSASG_v2**
   - Nombre del Organismo: Salmo salar (Atlantic salmon)
@@ -39,7 +39,49 @@
   |Gaps entre andamios| 9,418|  
   |Número total de cromosomas y plásmidios| 30| 
  
-  
+- 1.2) RefSeq
+  **CSASG_v2**
+Aceso = Público
+Fuente =
+DNA(7,164)
+RNA(3,779)
+Type =
+genome(1,283)
 
+Dispoción de la biblioteca =
+pares(6,805)
+simple(4,340)
+
+Plataformas=
+-ABI SOLiD(31) 
+-BGISEQ(13) 
+-Capillary(321) 
+-Illumina(10,514) 
+-Ion Torrent(132) 
+-LS454(11) 
+-Oxford Nanopore(14) 
+-PacBio SMRT(109)
+
+Estrategía=
+-EpiGenomics(314) 
+-Exome(425)
+
+Genome(1,605)
+other(8,801)
+Tipo de fila=
+-bam(394)
+
+fastq(9,009)
+sff(4)
+* Datos alineados* =(152)
+### Link de accceso muestra *ERX4787613*
+### Número de referencia de la Muestra= ERX4787613: HiSeq X Ten paired end sequencing; Raw reads: Library_IoA-00,Sample_IoA-00_9(A9)
+### subido por =Institute of Aquaculture, University of Stirling, Stirling, UK (Institute of Aquaculture, University of Stirling, )
+### Muestra: Laboratory strain IoA-00, SAMEA7690915 • ERS5447441
+### Organism: Lepeophtheirus salmonis
+
+|Run	| N°of Spots|	N° of Bases|	Size|	Published|
+|----|-----|-----|-----|-----|
+|ERR4968416|	27,846,466	|8.4G	|2.5Gb	|2021-05-12|
 
 
