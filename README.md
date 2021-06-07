@@ -27,13 +27,11 @@
  ## Estadisticas Globales
   
   |longitud de la secuencia total| 2,966,890,203| 
-  |----------------|--------------------|
+  |------------|--------------|
   |Longitud total sin espacios   | 2,618,890,303|
-  |-------------------|----------------|
   |Gaps entre andamios| 9,418|  
-  |------------------------|-------------------|
   |Número total de cromosomas y plásmidios| 30| 
-  |----------------------------------|--------|
+ 
   
   ## prueba para clonar repositorio
   
