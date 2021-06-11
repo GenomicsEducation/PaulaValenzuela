@@ -1,4 +1,4 @@
-Tarea desde R-markdown a github
+Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio
 
 ## INSTALACIÓN Y CONFIGURACIÓN DE SOFTWARE PARA ACCESO REMOTO Y TRANSFERENCIA DE ARCHIVOS (Incluir imágenes de la instalación).
 ### PuTTY
