@@ -1,5 +1,5 @@
 # ***Descripción genómica de la especie salmón del Atlántico (Salmo salar)***
-### - CURSO DBT 972 (GENÉTICA Y GENÓMICA EN PRODUCCIÓN ANIMAL)
+#### - CURSO DBT 972 (GENÉTICA Y GENÓMICA EN PRODUCCIÓN ANIMAL)
 ### Autor: 
 - Paula Valenzuela Aviés
 - Ingeniero en Biotecnología
@@ -9,7 +9,7 @@
 ### * Descripción del trabajo realizado*
 #### Se Selecciono la especie de importancia económica en producción animal Salmón del Atlántico. Luego se buscó información de su genoma en Assembly y Refseq para resumir la información genómica de interés en REDME del repositorio Git: GenomicsEducation/PaulaValenzuela. Posteriomente se busco información del Bioproyectos en SRA que presenta el número de acceso **SRX1103127816S** que evalua el impacto de la alimetación en el microbioma intestinal de salmón del atlántico juvenil a través de la secuenciaón del 16S rRNA del instestino.<https://www.ncbi.nlm.nih.gov/sra/SRX11031278[accn]>. Por ultimo se descargo el metadata de las muestras en formato.txt archivada en ** Metadata 2 update**
 
-## ![Salmón del Atlántico *salmo salar*](https://www.bing.com/images/search?view=detailV2&ccid=aPOtTgII&id=B6725BEDD03FFDD4F8559AF8B75E8C689FC43DCB&thid=OIP.aPOtTgIIacpmELeLmvBL3wHaC-&mediaurl=https%3a%2f%2fwww.salmonchile.cl%2fassets%2fuploads%2f2019%2f03%2fatlantico.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR68f3ad4e020869ca6610b78b9af04bdf%3frik%3dyz3En2iMXrf4mg%26pid%3dImgRaw&exph=1404&expw=3488&q=salmon+atlantico&simid=608038692002010751&ck=8AFFBA70A81456E6F82BEEED347111FB&selectedIndex=6&FORM=IRPRST&ajaxhist=0&ajaxserp=0)
+## ![Salmón del Atlántico *salmo salar*](https://th.bing.com/th/id/OIP.yVdBR79JssLwOb82BdbHPgHaEK?pid=ImgDet&rs=1)
 
 #### 1) Genoma del Samón del Atlántico en Assembly, Refseq y Bioproyectos en SRA
 - 1.1) Assembly
@@ -44,8 +44,7 @@
   |Número total de cromosomas y plásmidios| 30| 
  
 - 1.2) RefSeq
-  **CSASG_v2**
-  
+  **CSASG_v2** 
 #### Aceso = Público
 #### Fuente =
 DNA(7,164)
@@ -75,14 +74,14 @@ simple(4,340)
 #### Tipo de fila=
 -bam(394)
 
-#### fastq(9,009)
-#### sff(4)
-#### * Datos alineados* =(152)
-#### Link de accceso muestra *ERX4787613*
-#### Número de referencia de la Muestra= ERX4787613: HiSeq X Ten paired end sequencing; Raw reads: Library_IoA-00,Sample_IoA-00_9(A9)
-#### subido por =Institute of Aquaculture, University of Stirling, Stirling, UK (Institute of Aquaculture, University of Stirling, )
-#### Muestra: Laboratory strain IoA-00, SAMEA7690915 • ERS5447441
-#### Organism: Lepeophtheirus salmonis
+##### -fastq(9,009)
+##### -sff(4)
+##### -* Datos alineados* =(152)
+##### -Link de accceso muestra *ERX4787613*
+##### -Número de referencia de la Muestra= ERX4787613: HiSeq X Ten paired end sequencing; Raw reads: Library_IoA-00,Sample_IoA-00_9(A9)
+##### -subido por =Institute of Aquaculture, University of Stirling, Stirling, UK (Institute of Aquaculture, University of Stirling, )
+##### -Muestra: Laboratory strain IoA-00, SAMEA7690915 • ERS5447441
+##### - Organism: Lepeophtheirus salmonis
 
 |Run	| N°of Spots|	N° of Bases|	Size|	Published|
 |----|-----|-----|-----|-----|
@@ -114,10 +113,10 @@ simple(4,340)
 |SRR14693097|	71,300	|38.9M|	22.5Mb|	2021-05-31|
 
 
-### Posteriormente se Procedio a Instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. 
+#### Posteriormente se Procedio a Instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. 
 ##### El trabajó realizado se encuentra en disponible en la carpeta Instlacion_y_configuracion_del_software_para_acceso_remoto_y_trasnferencia
 
-##### Para acceder al servidor POMEO de la Escuela de Ciencias del Mar usando los siguientes nombres de usuario (**paula.valenzuela**) y password (**05student2021 **)
+##### Para acceder al servidor POMEO de la Escuela de Ciencias del Mar usando los siguientes nombres de usuario (*paula.valenzuela*) y password (*05student2021*)
 
 ##### Cabe mencionar que los sript utilizados fueron los siguientes: 
 ##### 1.1) - nano script1.sh
