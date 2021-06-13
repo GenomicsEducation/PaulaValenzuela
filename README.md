@@ -1,17 +1,20 @@
 # ***Descripción genómica de la especie salmón del Atlántico (Salmo salar)***
-#### - CURSO DBT 972 (GENÉTICA Y GENÓMICA EN PRODUCCIÓN ANIMAL)
-### Autor: 
+##### - CURSO DBT 972 (GENÉTICA Y GENÓMICA EN PRODUCCIÓN ANIMAL)
+#### Autor: 
 - Paula Valenzuela Aviés
 - Ingeniero en Biotecnología
 
 ## **Objetivos**
 ### 1) Seleccionar una especie de interes comercial de la producción animal y buscar información de su genoma en Assembly, Refseq y Bioproyectos en SRA.
 ### 2) Instalar y configurar el software para acceso remoto y transferencia de archivos.
+### 3) Realizar un análisis integral de control de calidad de secuencias NGS con fastqc.Adicionalmente filtrar y podar las secuencias con el software trimmomatic.
 
 ### * Descripción del trabajo realizado*
-#### Se Selecciono la especie de importancia económica en producción animal Salmón del Atlántico. En la primera etapa se buscó información de su genoma en Assembly y Refseq para resumir la información genómica de interés en REDME del repositorio Git: GenomicsEducation/PaulaValenzuela. Posteriomente se busco información del Bioproyectos en SRA que presenta el número de acceso **SRX1103127816S** que evalua el impacto de la alimetación en el microbioma intestinal de salmón del atlántico juvenil a través de la secuenciaón del 16S rRNA del instestino.<https://www.ncbi.nlm.nih.gov/sra/SRX11031278[accn]>. Por ultimo se descargo el metadata de las muestras en formato.txt archivada en ** Metadata 2 update**. En la segunda etapa se procedio a Instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio
+#### Se Selecciono la especie de importancia económica en producción animal Salmón del Atlántico. En la primera etapa se buscó información de su genoma en Assembly y Refseq para resumir la información genómica de interés en REDME del repositorio Git: GenomicsEducation/PaulaValenzuela. Posteriomente se busco información del Bioproyectos en SRA que presenta el número de acceso **SRX1103127816S** que evalua el impacto de la alimetación en el microbioma intestinal de salmón del atlántico juvenil a través de la secuenciaón del 16S rRNA del instestino.<https://www.ncbi.nlm.nih.gov/sra/SRX11031278[accn]>. Por ultimo se descargo el metadata de las muestras en formato.txt archivada en ** Metadata 2 update**. En la segunda etapa se procedio a instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. La tercera etapa consitió en realizar un análisis de control de calidad de las secuencias NSG con fastqc, para esto el análisis se realizó desde la base de datos SRA del NCBI y corresponden lecturas crudas del salmón del Atlántico *Salmo salar* en formato fastq, obtenidas por secuenciación de extremos emparejados con un secuenciador Illumina HiSeq2000; Las descargas de las secuencias NGS se procesedió utilizando SRA toolkit, luego se comprobó la integridad de descarga de archivos usando md5sum o similar, posteriormente se realizó el análisis de control de calidad. Para finalizar esta etapa se realizó el filtrado y poda de secuencias utilizando el software trimmomatic y se transfirieron los archivos de control de calidad mediante protocolo FTP desde Servidor a Cliente.
 
 ## ![Salmón del Atlántico *salmo salar*](https://th.bing.com/th/id/OIP.yVdBR79JssLwOb82BdbHPgHaEK?pid=ImgDet&rs=1)
+
+### _Actividades_
 
 #### 1) Genoma del Samón del Atlántico en Assembly, Refseq y Bioproyectos en SRA
 - 1.1) Assembly
@@ -46,7 +49,9 @@
   |Número total de cromosomas y plásmidios| 30| 
  
 - 1.2) RefSeq
+- 
   **CSASG_v2** 
+  
 #### Aceso = Público
 #### Fuente =
 DNA(7,164)
@@ -90,6 +95,7 @@ simple(4,340)
 |ERR4968416|	27,846,466	|8.4G	|2.5Gb	|2021-05-12|
 
 - 1.3) SRA
+
 #### **SRX11031278** : 16S rRNA microbioma intestinal de salmón del atlántico juvenil <https://www.ncbi.nlm.nih.gov/sra/SRX11031278[accn]>
 1 ILLUMINA (Illumina MiSeq) run: 71,300 spots, 38.9M bases, 22.5Mb descarga
 
@@ -115,16 +121,28 @@ simple(4,340)
 |SRR14693097|	71,300	|38.9M|	22.5Mb|	2021-05-31|
 
 
-#### Posteriormente se Procedio a Instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. 
+#### 2) Posteriormente se Procedio a Instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. 
 ##### El trabajó realizado se encuentra en disponible en la carpeta Instlacion_y_configuracion_del_software_para_acceso_remoto_y_trasnferencia
 
 ##### Para acceder al servidor POMEO de la Escuela de Ciencias del Mar usando los siguientes nombres de usuario (*paula.valenzuela*) y password (*05student2021*)
 
 ##### Cabe mencionar que los sript utilizados fueron los siguientes: 
-##### 1.1) - nano script1.sh
+##### 2.1) - nano script1.sh
            # !/bin/bash
            # Mi primer script
            echo Curso de Bioinformática
-##### 1.2) - nano script1.sh
+##### 2.2) - nano script1.sh
            # !/bin/bash
            # Descarga y descomprime SRA Toolkit wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz tar -xzf sratoolkit.current-  centos_linux64.tar.gz
+
+
+#### 3) Al realizar el análisis integral de control de calidad de secuencias NGS con fastqc.
+
+##### 3.1) Se procedió a configurar bioconda e instalación de software
+## ![Instalación software](https://user-images.githubusercontent.com/80971762/121821313-4584e580-cc66-11eb-8e30-2c7a000b7835.png)
+## ![](https://user-images.githubusercontent.com/80971762/121821380-811faf80-cc66-11eb-9f56-a9991ef11d17.png)
+## ![3 3](https://user-images.githubusercontent.com/80971762/121821388-91378f00-cc66-11eb-9af6-1be92acaa8f7.png)
+
+
+
+
