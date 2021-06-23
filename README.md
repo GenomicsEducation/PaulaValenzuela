@@ -7,7 +7,7 @@
 ## **Objetivos**
 ### 1) Seleccionar una especie de interes comercial de la producción animal y buscar información de su genoma en Assembly, Refseq y Bioproyectos en SRA.
 ### 2) Instalar y configurar el software para acceso remoto y transferencia de archivos.
-### 3) Realizar un análisis integral de control de calidad de secuencias NGS con fastqc.Adicionalmente filtrar y podar las secuencias con el software trimmomatic.
+### 3) Instalación y configuración de software.
 
 ### * Descripción del trabajo realizado*
 #### Se Selecciono la especie de importancia económica en producción animal Salmón del Atlántico. En la primera etapa se buscó información de su genoma en Assembly y Refseq para resumir la información genómica de interés en REDME del repositorio Git: GenomicsEducation/PaulaValenzuela. Posteriomente se busco información del Bioproyectos en SRA que presenta el número de acceso **SRX1103127816S** que evalua el impacto de la alimetación en el microbioma intestinal de salmón del atlántico juvenil a través de la secuenciaón del 16S rRNA del instestino.<https://www.ncbi.nlm.nih.gov/sra/SRX11031278[accn]>. Por ultimo se descargo el metadata de las muestras en formato.txt archivada en ** Metadata 2 update**. En la segunda etapa se procedio a instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. La tercera etapa consitió en realizar un análisis de control de calidad de las secuencias NSG con fastqc, para esto el análisis se realizó desde la base de datos SRA del NCBI y corresponden lecturas crudas del salmón del Atlántico *Salmo salar* en formato fastq, obtenidas por secuenciación de extremos emparejados con un secuenciador Illumina HiSeq2000; Las descargas de las secuencias NGS se procesedió utilizando SRA toolkit, luego se comprobó la integridad de descarga de archivos usando md5sum o similar, posteriormente se realizó el análisis de control de calidad. Para finalizar esta etapa se realizó el filtrado y poda de secuencias utilizando el software trimmomatic y se transfirieron los archivos de control de calidad mediante protocolo FTP desde Servidor a Cliente.
@@ -16,7 +16,7 @@
 
 ### _Actividades_
 
-#### 1) Genoma del Samón del Atlántico en Assembly, Refseq y Bioproyectos en SRA
+#### 1) GENOMA DEL SALMÓN DEL ATLÁNTICO EN Assembly, Refseq y Bioproyectos EN SRA
 - 1.1) Assembly
 
   **CSASG_v2**
@@ -121,7 +121,8 @@ simple(4,340)
 |SRR14693097|	71,300	|38.9M|	22.5Mb|	2021-05-31|
 
 
-#### 2) Posteriormente se Procedio a Instalar y configurar el software para acceso remoto y transferencia de archivos.Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. 
+#### 2) INSTALAR Y CONFIGURAR EL SOFTWARE PARA ACCESO REMOTO Y TRANSFERENCIA DE ARCHIVOS
+##### Está actividad fue realizada desde R-markdown a github con el objetivo de aprender a clonar el repositorio. 
 ##### El trabajó realizado se encuentra en disponible en la carpeta Instlacion_y_configuracion_del_software_para_acceso_remoto_y_trasnferencia
 
 ##### Para acceder al servidor POMEO de la Escuela de Ciencias del Mar usando los siguientes nombres de usuario (*paula.valenzuela*) y password (*05student2021*)
@@ -136,17 +137,26 @@ simple(4,340)
            # Descarga y descomprime SRA Toolkit wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz tar -xzf sratoolkit.current-  centos_linux64.tar.gz
 
 
-#### 3) Al realizar el análisis integral de control de calidad de secuencias NGS con fastqc.
+#### 3) INSTALACIÓN Y CONFIGURACIÓN SOFTWARE 
+###### Realizar el análisis integral de control de calidad de secuencias NGS con fastqc.
 
-##### 3.1) Se procedió a configurar bioconda e instalación de software
+##### 3.1) Control de calidad
+###### Se procedió a configurar bioconda e instalación de software
 ## ![Instalación software](https://user-images.githubusercontent.com/80971762/121821313-4584e580-cc66-11eb-8e30-2c7a000b7835.png)
 ## ![](https://user-images.githubusercontent.com/80971762/121821380-811faf80-cc66-11eb-9f56-a9991ef11d17.png)
 ## ![3 3](https://user-images.githubusercontent.com/80971762/121821388-91378f00-cc66-11eb-9af6-1be92acaa8f7.png)
 ## ![3 4](https://user-images.githubusercontent.com/80971762/121821527-9a752b80-cc67-11eb-8a1f-59429a187e75.png)
 ## ![3 5](https://user-images.githubusercontent.com/80971762/121821549-b7a9fa00-cc67-11eb-9490-5dc1a6d8502f.png)
 
-##### 3.2)  Descarga de biomuestra desde SRA
-###### Se utilizó el siguiente script 
+##### 4.1) Alineamiento
+###### El sotfware BWA es un algoritmo de alineación para alinear lecturas de secuencia o secuencias de consulta largas en este caso con el genoma de referencia del salmo salar (ICSAGS_V2), especificamente el mirocondrial (NC_001960.1). 
+###### Por otra parte el sotfware Samtools, permite manipular alineaciones en los formatos SAM (Sequence Alignment Map), BAM y CRAM. Convierte entre los formatos, clasifica, fusiona e indexa, y puede recuperar lecturas en cualquier región rápidamente
+## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_16_51](https://user-images.githubusercontent.com/80971762/123139725-8332fc80-d424-11eb-98ef-244adadc6dd0.png)
+## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_16_59](https://user-images.githubusercontent.com/80971762/123139788-93e37280-d424-11eb-9ef3-c6d56f2b5ce7.png)
+## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_18_21](https://user-images.githubusercontent.com/80971762/123139837-9fcf3480-d424-11eb-9943-b91e6cbbe616.png)
+
+##### 3.2) ETAPAS ANÁLISIS DE CONTROL DE CALIDAD, FILTRADO Y PODA.
+###### Descargar secuencias NGS usando SRA toolkit: Para descarga de biomuestra desde SRAS, se utilizó el siguiente script 
         #!/bin/bash 
         #SBATCH -J prefetch_usuario
         /home2/usuario/sratoolkit.2.11.0-centos_linux64/bin/prefetch --max-size 100G SRR2006763 -O /home2/usuario/SRA_samples/
@@ -165,10 +175,10 @@ simple(4,340)
   
 ##   ![paula valenzuela@test-pomeo_~_SRA_samples_SRR2006763 10-06-2021 13_42_10](https://user-images.githubusercontent.com/80971762/121821908-03f63980-cc6a-11eb-8ac1-4127e6c9e34d.png)
 
-##### 3.3)Comprobación de integridad de archivos
+##### 3.3) Comprobación de integridad de archivos
 ##![3 8](https://user-images.githubusercontent.com/80971762/121821923-21c39e80-cc6a-11eb-9358-472dbed35fe3.png)
 
-##### 3.4) Análisis de control de calidad
+##### 3.4) Realizar análisis de control de calidad
 ###### Se corrió el siguiente script, donde la salida de la ejecuación del sript dío dos archivos 
         #!/bin/bash
         #SBATCH - J fastqc_usuario
@@ -181,7 +191,7 @@ simple(4,340)
 ## ![Introducción al análisis de secuencias NGS y 3 páginas más - Personal_ Microsoft​ Edge 10-06-2021 13_42_24](https://user-images.githubusercontent.com/80971762/121822116-4f5d1780-cc6b-11eb-87c1-f037c7bd6baf.png)
 ## ![RStudio y 3 páginas más - Personal_ Microsoft​ Edge 13-06-2021 17_17_02](https://user-images.githubusercontent.com/80971762/121822119-53893500-cc6b-11eb-9f73-9f7fd0f01ae8.png)
 
-##### 3.5) Filtrar y podar 
+##### 3.5)  Realizar filtrado y poda de secuencias.
 
 ###### Se ejecutó el siguinte script desde la carpeta donde constan los archivos fastq (SRR2006763/) 
          #!/bin/bash
@@ -193,6 +203,52 @@ simple(4,340)
 ## ![3 11](https://user-images.githubusercontent.com/80971762/121822294-57698700-cc6c-11eb-912e-5f38a4081378.png)
 ## ![3 12](https://user-images.githubusercontent.com/80971762/121822299-605a5880-cc6c-11eb-995b-2b195f0fbc38.png)
 
-##### Cabe desctacar que los archivos descargados y descomprimidos en formato HTLM se enuentran en la carpeta ---
+##### Transferir archivos de control de calidad mediante protocolo FTP desde Servidor a Cliente: Cabe desctacar que los archivos descargados y descomprimidos en formato HTLM se encuentran en la carpeta ---
 
+#### ETAPAS DE ALINEAMIENTO
 
+##### 4.2) Obtener secuencias Fastq
+## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_38_42](https://user-images.githubusercontent.com/80971762/123141865-d73ee080-d426-11eb-9232-b2f928122610.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_50_03](https://user-images.githubusercontent.com/80971762/123141949-ede53780-d426-11eb-9985-625c7eff4ce9.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_50_09](https://user-images.githubusercontent.com/80971762/123142028-07867f00-d427-11eb-972c-5fe2024bdb91.png)
+
+##### 4.3) Subir genoma a POMEO con software de acceso remoto
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_52_44](https://user-images.githubusercontent.com/80971762/123142475-782d9b80-d427-11eb-91fc-e77640bd6aa9.png))
+
+##### 4.4) Indexación genoma mitocondrial
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_52_44](https://user-images.githubusercontent.com/80971762/123142935-fdb14b80-d427-11eb-8afa-65e1fbe561d9.png)
+## ![PaulaValenzuela - paula valenzuela@200 54 220 141 - WinSCP 17-06-2021 12_48_50](https://user-images.githubusercontent.com/80971762/123142803-d490bb00-d427-11eb-84fd-d5e164855359.png)
+
+##### Para ejecutar todas las etapas se debe ejecutar el script con nano denominado aln_mt.sh
+     #!/bin/bash -l
+     # para alinear tus dos secuencias fastq al genoma mitocondrial
+     bwa mem mt.fasta SRR2006763_1.fastq SRR2006763_2.fastq > SRR2006763.sam 
+     # Transformar tu archivo sam a bam
+     samtools view -Sb -q 30 SRR2006763.sam > SRR2006763.bam 
+      # ordenar tu archivo binario bam
+      samtools sort SRR2006763.bam -o SRR2006763.sort.bam 
+      # indexar tu archivo bam
+      samtools index SRR2006763.sort.bam 
+
+##### 4.5)Alineamiento de secuencias contra genoma mitocondrial
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_57_44](https://user-images.githubusercontent.com/80971762/123143143-3b15d900-d428-11eb-8c07-5e661e105be6.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_58_05](https://user-images.githubusercontent.com/80971762/123143181-4832c800-d428-11eb-890f-a785ede0e49e.png)
+
+##### 4.6) Conversión SAM a BAM y análisis estadistico estandar
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_59_22](https://user-images.githubusercontent.com/80971762/123143526-b24b6d00-d428-11eb-8b13-1c25c8e150fa.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 12_59_50](https://user-images.githubusercontent.com/80971762/123144050-40275800-d429-11eb-862c-e3b03bac0396.png)
+
+##### 4.7) Orden de lecturas alineadas por posición, Indexación con Samtools , Exploración de archivos de salida en cada etapa
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 13_22_24](https://user-images.githubusercontent.com/80971762/123144080-49b0c000-d429-11eb-86a3-d36fa24936e7.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 17-06-2021 13_26_59](https://user-images.githubusercontent.com/80971762/123144135-5af9cc80-d429-11eb-97ca-eba1eb85f865.png)
+
+##### 4.8) Explorar alineamiento con samtools
+## ![paula valenzuela@test-pomeo_~_alineamiento 23-06-2021 11_54_33](https://user-images.githubusercontent.com/80971762/123144447-add38400-d429-11eb-8540-3e11f7e14b9a.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 23-06-2021 11_54_47](https://user-images.githubusercontent.com/80971762/123144526-bdeb6380-d429-11eb-8f1a-c85bea85a20a.png)
+##  ![paula valenzuela@test-pomeo_~_alineamiento 23-06-2021 11_55_07](https://user-images.githubusercontent.com/80971762/123144564-c8a5f880-d429-11eb-9230-02a9714dd4af.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 23-06-2021 11_55_32](https://user-images.githubusercontent.com/80971762/123144601-d22f6080-d429-11eb-965a-6f42b60008d0.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 23-06-2021 12_08_40](https://user-images.githubusercontent.com/80971762/123144702-f723d380-d429-11eb-862d-e07e0d670d5c.png)
+## ![paula valenzuela@test-pomeo_~_alineamiento 23-06-2021 12_12_34](https://user-images.githubusercontent.com/80971762/123144752-0440c280-d42a-11eb-9cab-6a2e7d408619.png)
+
+##### 4.9) Visualizacion de la salida del alinamiento
+##![IGV 23-06-2021 12_37_14](https://user-images.githubusercontent.com/80971762/123145011-54b82000-d42a-11eb-8d4e-4973372d954e.png)
