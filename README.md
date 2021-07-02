@@ -361,6 +361,8 @@ simple(4,340)
  ###### 6.3.3) Para la poblacion de Norteamerica
  ## ![paula valenzuela@test-pomeo_~_population 01-07-2021 12_20_03](https://user-images.githubusercontent.com/80971762/124184066-0e486e00-da87-11eb-9f6e-9230e6c7627b.png)
 
+##### 6.4) El análisis de Heterogenicidad individual, diversidad de nucleotidos, desequilibrio de ligamento, gráficos de PCA y análisis visualizados en gráficos de ADMIXTURE para 2, 4 y 6 poblaciones; tambien se realizó en Rstudio el cual se podrá visualizar en el Archivo denominado Genética_poblacional.
+
 ##### 6.5) Analisis de estructura poblacional
 ## ![paula valenzuela@test-pomeo_~_population 01-07-2021 15_21_19](https://user-images.githubusercontent.com/80971762/124184220-3f28a300-da87-11eb-82b6-fcbdb3c95431.png)
 ## ![paula valenzuela@test-pomeo_~_population 01-07-2021 15_21_47](https://user-images.githubusercontent.com/80971762/124184252-4a7bce80-da87-11eb-8011-ab50bb25a7cc.png)
