@@ -1,5 +1,5 @@
 
-### Práctica realizada en Rstudio y se encuentra en el archivo con el siguiente archivo=  práctica de GWAS y selección genómica
+### Práctica realizada en Rstudio y se encuentra en el archivo con el siguiente archivo=  práctica de asociación genómica GWAS y selección genómica
 ---
 title: "Practica GWAS y Selección genómica"
 author: "Paula Valenzuela"
