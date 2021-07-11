@@ -1,5 +1,5 @@
 
-### Práctica realizada en Rstudio y se encuentra en el archivo con el siguiente link = https://github.com/GenomicsEducation/PaulaValenzuela/blob/main/Actividad%207.%20GWAS%20y%20selecci%C3%B3n%20gen%C3%B3mica.Rmd/Practica%20de%20asocici%C3%B3n%20gen%C3%B3mica%20GWAS%20y%20selecci%C3%B3n.Rproj
+### Práctica realizada en Rstudio y se encuentra en el archivo con el siguiente link = <https://github.com/GenomicsEducation/PaulaValenzuela/blob/main/Actividad%207.%20GWAS%20y%20selecci%C3%B3n%20gen%C3%B3mica.Rmd/Practica%20de%20asocici%C3%B3n%20gen%C3%B3mica%20GWAS%20y%20selecci%C3%B3n.Rproj>
 ---
 title: "Practica GWAS y Selección genómica"
 author: "Paula Valenzuela"
