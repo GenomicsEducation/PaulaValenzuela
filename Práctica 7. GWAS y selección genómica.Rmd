@@ -1,3 +1,5 @@
+
+### Práctica realizada en Rstudio
 ---
 title: "Practica GWAS y Selección genómica"
 author: "Paula Valenzuela"
