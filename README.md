@@ -25,6 +25,6 @@
 #### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= https://github.com/GenomicsEducation/PaulaValenzuela/commit/af3b00609c70ac299bb8f31cc96eff01cc6a13ab
 #### 3) Actividad 3. Instalación y configuración de software = https://github.com/GenomicsEducation/PaulaValenzuela/commit/515dac6506b4fc1a1e2b0b5ad839b2b30c4d1122
 #### 4) Actividad 4. Alineamiento = https://github.com/GenomicsEducation/PaulaValenzuela/commit/03702411777505422af3d146a5e295effd5b08f3
-#### 5) Actividad 5. Llamado de variantes = https://github.com/GenomicsEducation/PaulaValenzuela/commit/26f49c605af16ab412d0a919d36d2c806aabb316
+#### 5) Actividad 5. Llamado de variantes = https://github.com/GenomicsEducation/PaulaValenzuela/commit/0e50e6efe352833cd38233de51ec250659ce55c9
 #### 6) Actividad 6. Genética poblacional y ancestría = https://github.com/GenomicsEducation/PaulaValenzuela/commit/c1a4cd07867fcd1c45204013db26419552ee4e80
 #### 7) Actividad 7. Asociación genómica GWAS y selección genómica = https://github.com/GenomicsEducation/PaulaValenzuela/commit/626daff2d8dc1fec851a2f1df8e0d80a5849db8c
