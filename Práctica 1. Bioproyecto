@@ -1,4 +1,4 @@
- 1) GENOMA DEL SALMÓN DEL ATLÁNTICO EN Assembly, Refseq y Bioproyectos EN SRA
+##  1) Genoma del salmón del Atlántico en Assembly, Refseq y Bioproyectos EN SRA
 - 1.1) Assembly
 
 ## **CSASG_v2**
@@ -102,3 +102,4 @@ simple(4,340)
 |SRR14693097|	71,300	|38.9M|	22.5Mb|	2021-05-31|
 
 #### El Metadata se encuantra en el archivo = Metadata, en el siguinete Link https://github.com/GenomicsEducation/PaulaValenzuela/commit/860899de10ba8dda2e3ca88253edbd253ba215fa
+
