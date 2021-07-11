@@ -21,10 +21,10 @@
 
 ### _Actividades_
 
-#### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = https://github.com/GenomicsEducation/PaulaValenzuela/commit/a94e07fbd2cb66f061c844023d9484fd38a092c8
-#### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= https://github.com/GenomicsEducation/PaulaValenzuela/commit/af3b00609c70ac299bb8f31cc96eff01cc6a13ab
-#### 3) Actividad 3. Instalación y configuración de software = https://github.com/GenomicsEducation/PaulaValenzuela/commit/515dac6506b4fc1a1e2b0b5ad839b2b30c4d1122
-#### 4) Actividad 4. Alineamiento = https://github.com/GenomicsEducation/PaulaValenzuela/commit/03702411777505422af3d146a5e295effd5b08f3
-#### 5) Actividad 5. Llamado de variantes = https://github.com/GenomicsEducation/PaulaValenzuela/commit/0e50e6efe352833cd38233de51ec250659ce55c9
-#### 6) Actividad 6. Genética poblacional y ancestría = https://github.com/GenomicsEducation/PaulaValenzuela/commit/bbe0a0c4c68808ba5ba3c89d3f86c8974c0eb095
-#### 7) Actividad 7. Asociación genómica GWAS y selección genómica = https://github.com/GenomicsEducation/PaulaValenzuela/commit/62493ae9cc4765519c27ab5bf9dadf6c756977c6
+#### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = 
+#### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= 
+#### 3) Actividad 3. Instalación y configuración de software =
+#### 4) Actividad 4. Alineamiento = 
+#### 5) Actividad 5. Llamado de variantes = 
+#### 6) Actividad 6. Genética poblacional y ancestría = ¿
+#### 7) Actividad 7. Asociación genómica GWAS y selección genómica = 
