@@ -26,5 +26,5 @@
 #### 3) Actividad 3. Instalación y configuración de software  = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%203.%20Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20software
 #### 4) Actividad 4. Alineamiento = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%204.%20Alineamiento
 #### 5) Actividad 5. Llamado de variantes = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%205.%20Llamado%20de%20variantes
-#### 6) Actividad 6. Genética poblacional y ancestría = 
+#### 6) Actividad 6. Genética poblacional y ancestría = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%206.%20Gen%C3%A9tica%20poblacional%20y%20ancestr%C3%ADas
 #### 7) Actividad 7. Asociación genómica GWAS y selección genómica = 
