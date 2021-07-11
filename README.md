@@ -21,7 +21,9 @@
 
 ### _Actividades_
 
-#### 1) GENOMA DEL SALMÓN DEL ATLÁNTICO EN Assembly, Refseq y Bioproyectos EN SRA
+#### 1) https://github.com/GenomicsEducation/PaulaValenzuela/commit/8ed79b801226f7d3d9f581d5b6720038f359086b
+
+GENOMA DEL SALMÓN DEL ATLÁNTICO EN Assembly, Refseq y Bioproyectos EN SRA
 - 1.1) Assembly
 
   **CSASG_v2**
