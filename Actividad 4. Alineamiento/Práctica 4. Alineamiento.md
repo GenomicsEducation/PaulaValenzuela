@@ -1,61 +1,11 @@
+#### 4) ETAPAS DE ALINEAMIENTO
+
 ##### 4.1) Alineamiento
 ###### El sotfware BWA es un algoritmo de alineación para alinear lecturas de secuencia o secuencias de consulta largas en este caso con el genoma de referencia del salmo salar (ICSAGS_V2), especificamente el mirocondrial (NC_001960.1). 
 ###### Por otra parte el sotfware Samtools, permite manipular alineaciones en los formatos SAM (Sequence Alignment Map), BAM y CRAM. Convierte entre los formatos, clasifica, fusiona e indexa, y puede recuperar lecturas en cualquier región rápidamente
 ## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_16_51](https://user-images.githubusercontent.com/80971762/123139725-8332fc80-d424-11eb-98ef-244adadc6dd0.png)
 ## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_16_59](https://user-images.githubusercontent.com/80971762/123139788-93e37280-d424-11eb-9ef3-c6d56f2b5ce7.png)
 ## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_18_21](https://user-images.githubusercontent.com/80971762/123139837-9fcf3480-d424-11eb-9943-b91e6cbbe616.png)
-
-##### 3.2) ETAPAS ANÁLISIS DE CONTROL DE CALIDAD, FILTRADO Y PODA.
-###### Descargar secuencias NGS usando SRA toolkit: Para descarga de biomuestra desde SRAS, se utilizó el siguiente script 
-        #!/bin/bash 
-        #SBATCH -J prefetch_usuario
-        /home2/usuario/sratoolkit.2.11.0-centos_linux64/bin/prefetch --max-size 100G SRR2006763 -O /home2/usuario/SRA_samples/
-        /home2/usuario/sratoolkit.2.11.0-centos_linux64/bin/vdb-validate /home2/usuario/SRA_samples/SRR2006763/SRR2006763.sra
- 
-## ![3 6](https://user-images.githubusercontent.com/80971762/121821568-d0b2ab00-cc67-11eb-95d6-9c7956f67d2c.png)
-
-###### Este script contiene las instrucciones necesarias para la descarga de la secuencia con el comando *prefetch* que es parte del kit de herramientas de SRA y su función es descargar archivos de secuencia en formato SRA comprimido. Además, incluye un segundo comando llamado *vdb-validate* que realiza varios chequeos luego de la descarga para asegurar que esta se ha desarrollado correctamente
-
-## ![3 7](https://user-images.githubusercontent.com/80971762/121821574-dc9e6d00-cc67-11eb-9fc7-c6126680ded3.png)
-
-###### Se accedió a la carpeta **SRR2006763** y creó el siguiente script (nano fdump.sh ó en mi caso nano SRR2006763) que permitió obtener los archivos fastq de la muestra SRR2006763
-      #!/bin/bash
-      #SBATCH - J fdump_usuario
-      /home2/usuario/sratoolkit.2.11.0-centos_linux64/bin/fasterq-dump /home2/usuario/SRA_samples/SRR2006763/*.sra -O      /home2/usuario/SRA_samples/SRR2006763/
-  
-##   ![paula valenzuela@test-pomeo_~_SRA_samples_SRR2006763 10-06-2021 13_42_10](https://user-images.githubusercontent.com/80971762/121821908-03f63980-cc6a-11eb-8ac1-4127e6c9e34d.png)
-
-##### 3.3) Comprobación de integridad de archivos
-##![3 8](https://user-images.githubusercontent.com/80971762/121821923-21c39e80-cc6a-11eb-9358-472dbed35fe3.png)
-
-##### 3.4) Realizar análisis de control de calidad
-###### Se corrió el siguiente script, donde la salida de la ejecuación del sript dío dos archivos 
-        #!/bin/bash
-        #SBATCH - J fastqc_usuario
-        fastqc /home2/usuario/SRA_samples/SRR2006763/*.fastq
-    
-## ![3 9](https://user-images.githubusercontent.com/80971762/121822013-ab736c00-cc6a-11eb-8e84-f39841fb8f07.png)
-
-###### Para descargar los archivos, POMEO tiene instalado Rstudio server por lo que fue posible acceder a los archivos directamente ingresando al servidor a traves del puerto 8787.
-
-## ![Introducción al análisis de secuencias NGS y 3 páginas más - Personal_ Microsoft​ Edge 10-06-2021 13_42_24](https://user-images.githubusercontent.com/80971762/121822116-4f5d1780-cc6b-11eb-87c1-f037c7bd6baf.png)
-## ![RStudio y 3 páginas más - Personal_ Microsoft​ Edge 13-06-2021 17_17_02](https://user-images.githubusercontent.com/80971762/121822119-53893500-cc6b-11eb-9f73-9f7fd0f01ae8.png)
-
-##### 3.5)  Realizar filtrado y poda de secuencias.
-
-###### Se ejecutó el siguinte script desde la carpeta donde constan los archivos fastq (SRR2006763/) 
-         #!/bin/bash
-         #SBATCH - J trimm_usuario
-          trimmomatic PE SRR2006763_1.fastq SRR2006763_2.fastq -baseout SRR20067634_filtered.fastq.gz SLIDINGWINDOW:5:25 MINLEN:60
-
-##### De la ejecucion anterior se ejecutaron 4 archivos comprimidos que posteriormente se descomprimieron
-## ![3 10](https://user-images.githubusercontent.com/80971762/121822280-46b91100-cc6c-11eb-99fa-048197451a91.png)
-## ![3 11](https://user-images.githubusercontent.com/80971762/121822294-57698700-cc6c-11eb-912e-5f38a4081378.png)
-## ![3 12](https://user-images.githubusercontent.com/80971762/121822299-605a5880-cc6c-11eb-995b-2b195f0fbc38.png)
-
-##### Transferir archivos de control de calidad mediante protocolo FTP desde Servidor a Cliente: Cabe desctacar que los archivos descargados y descomprimidos en formato HTLM se encuentran en la carpeta ---
-
-#### 4) ETAPAS DE ALINEAMIENTO
 
 ##### 4.2) Obtener secuencias Fastq
 ## ![paula valenzuela@test-pomeo_~ 17-06-2021 12_38_42](https://user-images.githubusercontent.com/80971762/123141865-d73ee080-d426-11eb-9232-b2f928122610.png)
@@ -103,4 +53,4 @@
 ##### 4.9) Visualizacion de la salida del alinamiento
 ##![IGV 23-06-2021 12_37_14](https://user-images.githubusercontent.com/80971762/123145011-54b82000-d42a-11eb-8d4e-4973372d954e.png)
 
-## El arcchivo descomprimido se encuentra en la carpeta "archvos descomprimidos ", link =  https://github.com/GenomicsEducation/PaulaValenzuela/commit/ab5ad8e8d80efe53509af7e1c7dbf81b772bc282
+## El arcchivo descomprimido se encuentra en la carpeta "archivos descomprimidos formato htlm"
