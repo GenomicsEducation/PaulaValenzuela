@@ -1,5 +1,6 @@
 
-### Práctica realizada en Rstudio
+### Práctica realizada en Rstudio y se encuentra en el archivo con el siguiente link = 
+! [](https://github.com/GenomicsEducation/PaulaValenzuela/commit/a9d97a0820a0bf5ca0deb1a0c5dd6ae12647eebd)
 ---
 title: "Practica GWAS y Selección genómica"
 author: "Paula Valenzuela"
