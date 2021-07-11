@@ -5,7 +5,8 @@
 ##### Para acceder al servidor POMEO de la Escuela de Ciencias del Mar usando los siguientes nombres de usuario (*paula.valenzuela*) y password (*05student2021*)
 
 ##### Cabe mencionar que los sript utilizados fueron los siguientes: 
-##### 2.1) - nano script1.sh
+ 
+##### 2.1)- nano script1.sh
            # !/bin/bash
            # Mi primer script
            echo Curso de Bioinformática
