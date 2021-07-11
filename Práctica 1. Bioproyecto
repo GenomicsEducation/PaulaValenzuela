@@ -1,7 +1,7 @@
  1) GENOMA DEL SALMÓN DEL ATLÁNTICO EN Assembly, Refseq y Bioproyectos EN SRA
 - 1.1) Assembly
 
-  **CSASG_v2**
+## **CSASG_v2**
  
   - Nombre del Organismo: Salmo salar (Atlantic salmon)
   - Nombre inespecifico: Salmón Atlantico
@@ -30,8 +30,7 @@
   |Gaps entre andamios| 9,418|  
   |Número total de cromosomas y plásmidios| 30| 
  
-- 1.2) RefSeq
-- 
+- 1.2) RefSeq 
   **CSASG_v2** 
   
 #### Aceso = Público
