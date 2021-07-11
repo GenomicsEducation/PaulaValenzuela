@@ -1,8 +1,8 @@
-##* Genoma del salmón del Atlántico en Assembly, Refseq y Bioproyectos EN SRA*
+## * Genoma del salmón del Atlántico en Assembly, Refseq y Bioproyectos EN SRA*
 
-- 1.1) Assembly
+1.1) Assembly
 
- **CSASG_v2**
+  **CSASG_v2**
  
   - Nombre del Organismo: Salmo salar (Atlantic salmon)
   - Nombre inespecifico: Salmón Atlantico
@@ -22,9 +22,9 @@
   - Método Ensamble: MaSuRCA v. 2.0.3
   - Tecnología de secuanción: Illumina HiSeq; PacBio; Sanger; Illumina GAIIx
 
-Este es un nuevo ensamble de todo el genoma del Salmón del Atlántico. El ensamble fue realizado con MaSuRCA v. 2.0.3 y post procesado para lograr cerrar los espacios de los andamios se utilizaron secuencias de otros ensamblajes. La muestra de ADN fue extraida desde el músculo de un donor doble haploide. 
+#### Este es un nuevo ensamble de todo el genoma del Salmón del Atlántico. El ensamble fue realizado con MaSuRCA v. 2.0.3 y post procesado para lograr cerrar los espacios de los andamios se utilizaron secuencias de otros ensamblajes. La muestra de ADN fue extraida desde el músculo de un donor doble haploide. 
 
-Estadisticas Globales
+### Estadisticas Globales
   
   |longitud de la secuencia total| 2,966,890,203| 
   |------------|--------------|
@@ -32,7 +32,7 @@ Estadisticas Globales
   |Gaps entre andamios| 9,418|  
   |Número total de cromosomas y plásmidios| 30| 
  
-- 1.2) RefSeq 
+1.2) RefSeq 
   **CSASG_v2** 
   
 #### Aceso = Público
