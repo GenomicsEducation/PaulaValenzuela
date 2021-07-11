@@ -23,7 +23,7 @@
 
 #### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%201.%20Bioproyecto
 #### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%202.%20%20Software%20de%20acceso%20remoto%20y%20transferencia%20de%20archivos
-#### 3) Actividad 3. Instalación y configuración de software =
+#### 3) Actividad 3. Instalación y configuración de software  = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%203.%20Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20software
 #### 4) Actividad 4. Alineamiento = 
 #### 5) Actividad 5. Llamado de variantes = 
 #### 6) Actividad 6. Genética poblacional y ancestría = ¿
