@@ -21,7 +21,7 @@
 
 ### _Actividades_
 
-#### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = 
+#### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = https://github.com/GenomicsEducation/PaulaValenzuela/tree/main/Actividad%201.%20Bioproyecto
 #### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= 
 #### 3) Actividad 3. Instalación y configuración de software =
 #### 4) Actividad 4. Alineamiento = 
