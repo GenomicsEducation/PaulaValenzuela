@@ -23,7 +23,7 @@
 
 #### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = https://github.com/GenomicsEducation/PaulaValenzuela/commit/a94e07fbd2cb66f061c844023d9484fd38a092c8
 #### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= https://github.com/GenomicsEducation/PaulaValenzuela/commit/af3b00609c70ac299bb8f31cc96eff01cc6a13ab
-#### 3) Actividad 3. Instalación y configuración de software = https://github.com/GenomicsEducation/PaulaValenzuela/commit/50f4f870b0a68fb6951fb394ef6789c770adc418
+#### 3) Actividad 3. Instalación y configuración de software = https://github.com/GenomicsEducation/PaulaValenzuela/commit/515dac6506b4fc1a1e2b0b5ad839b2b30c4d1122
 #### 4) Actividad 4. Alineamiento = https://github.com/GenomicsEducation/PaulaValenzuela/commit/000efdd5ccbc450a36c059b0d48c0ce9f9d169e8
 #### 5) Actividad 5. Llamado de variantes = https://github.com/GenomicsEducation/PaulaValenzuela/commit/26f49c605af16ab412d0a919d36d2c806aabb316
 #### 6) Actividad 6. Genética poblacional y ancestría = https://github.com/GenomicsEducation/PaulaValenzuela/commit/c1a4cd07867fcd1c45204013db26419552ee4e80
