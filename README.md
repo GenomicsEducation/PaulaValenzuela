@@ -21,7 +21,8 @@
 
 ### _Actividades_
 
-#### 1) https://github.com/GenomicsEducation/PaulaValenzuela/commit/8ed79b801226f7d3d9f581d5b6720038f359086b
+#### 1) Actividad 1. Selección de especie de interes e información en bases de datos públicas = https://github.com/GenomicsEducation/PaulaValenzuela/commit/8ed79b801226f7d3d9f581d5b6720038f359086b
+#### 2) Actividad 2. Instalación  y configurar el software para acceso remoto y transferencia de archivos= https://github.com/GenomicsEducation/PaulaValenzuela/commit/ce18f4877d11c538c01ca7b515f289a3c908bc03
 
 GENOMA DEL SALMÓN DEL ATLÁNTICO EN Assembly, Refseq y Bioproyectos EN SRA
 - 1.1) Assembly
