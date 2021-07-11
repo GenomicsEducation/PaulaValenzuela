@@ -27,4 +27,4 @@
 #### 4) Actividad 4. Alineamiento = https://github.com/GenomicsEducation/PaulaValenzuela/commit/03702411777505422af3d146a5e295effd5b08f3
 #### 5) Actividad 5. Llamado de variantes = https://github.com/GenomicsEducation/PaulaValenzuela/commit/0e50e6efe352833cd38233de51ec250659ce55c9
 #### 6) Actividad 6. Genética poblacional y ancestría = https://github.com/GenomicsEducation/PaulaValenzuela/commit/bbe0a0c4c68808ba5ba3c89d3f86c8974c0eb095
-#### 7) Actividad 7. Asociación genómica GWAS y selección genómica = 
+#### 7) Actividad 7. Asociación genómica GWAS y selección genómica = https://github.com/GenomicsEducation/PaulaValenzuela/commit/62493ae9cc4765519c27ab5bf9dadf6c756977c6
