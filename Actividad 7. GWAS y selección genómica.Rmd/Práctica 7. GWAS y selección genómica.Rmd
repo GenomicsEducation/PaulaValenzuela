@@ -1,0 +1,163 @@
+
+### Práctica realizada en Rstudio y se encuentra en el archivo con el siguiente archivo=  práctica de asociación genómica GWAS y selección genómica
+---
+title: "Practica GWAS y Selección genómica"
+author: "Paula Valenzuela"
+date: "11/7/2021"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(rrBLUP)
+library(utils)
+```
+
+
+## Importar y explorar archivo de genotipos y fenotipos
+
+### a) Importa datos geno y pheno
+```{r}
+geno <- read.delim("geno.txt", sep = "\t", dec = ",", header = T)
+pheno <- read.delim("pheno.txt", sep = "\t", dec = ",", header = T)
+```
+
+### b) explorar datos
+
+```{r}
+head(geno)
+
+```
+```{r}
+head(pheno)
+```
+```{r}
+dim(geno)
+```
+```{r}
+dim(pheno)
+```
+
+### Histograma variable cuantitativa y en archivp pheno 
+
+```{r}
+hist(pheno$y)
+```
+### ¿Cómo están codificados los genotipos de cada SNP? numericamente con numeros que van desde -1, 0 y 1. Para el animal 1, existen snp homocigoto rececivo (-1), heterocigotos (0) y como homocigoto dominante (1). En el animal 2 son todos heterecigotos (0) y en el animal 3 estan homicigoto recesivo y dominantes y heterocigoto.
+### ¿Observa heterocigotos? si, representado con el 0 
+
+
+## Calcular y graficar matriz de parentesco genómico según método de Van Raden para los 200 animales
+
+```{r}
+A <- A.mat(geno[4:203]) 
+dim(A)
+```
+
+```{r}
+head(A [1:6,1:6])
+```
+
+```{r}
+hist(A)
+```
+
+### Coeficiente endogamia de la población
+
+```{r}
+endogamia <- diag(A)
+
+hist(endogamia, main = "Histograma de endogamia")
+```
+
+### ¿Cuál es el nivel de endogamia promedio de esta población? El nivel de endogamia promedio es de 1, por ende es no endogámico
+### ¿Que significa un valor de endogamia de 1.1? endogamia
+### ¿Que representa un valor de endogamia de 0.90? al ser un valor menor a 1, el nivel de endogamia disminuye dráticamente, por ende son no endogámicos
+
+
+## ANÁLISIS WGAS 
+```{r}
+score <- GWAS(pheno,geno, plot=TRUE)
+```
+
+```{r}
+class(score)
+```
+### ¿Cuantos QTLs fueron detectados por el análisis GWAS? ¿En qué cromosomas se encuentran? Visualizo en una mayor cantidad en los cromosomas 3 y 10, pero tambien se detecta un pequeño porcentaje de QTLs en los cromosomas 1,7,8 y 9. A simple vista se logran cuantificar 3 QTLs en cromosoma 1, 2 QTLs en el cromosoma3, 1 QTLs en el cromosoma 7, 4 QTLs en el cromosoma 8, 2 en el cromosoma 9 y 2 en el cromosoma 10. 
+
+##  QTLs
+
+```{r}
+head(score)
+```
+
+```{r}
+View(score)
+```
+
+```{r}
+dplyr::filter(score, y > 5)
+```
+
+### ¿Qué SNP fueron significativos? Al utilizar un score>5, solo 2 cromosomas tuvieron SNP significativos, estos fueron los de cromosoma 3 y 10. Esto se puede observar mediante la visualización del análisis de GWAS, donde ambos cromosomas presentan QTLs que sobrepasa el minimo establecido. 
+
+
+```{r}
+exp(-7.5047236) 
+```
+
+```{r}
+# snp1000
+exp(-8.5080997)
+```
+
+```{r}
+exp(-0.000201827)
+```
+
+### ¿Con que nivel de significancia se concluye que fueron significativos? Con un nivel mayor a  0.0002
+
+## Realizar un gráfico de regresión lineal de fenotipo en función de los genotipo para cada SNP significativo.
+
+```{r}
+t_geno_300 <- t(geno[300,4:203])+1
+t_geno_1000 <- t(geno[1000,4:203])+1
+qtl <- data.frame(t_geno_300,t_geno_1000,pheno$y)
+
+head(qtl)
+```
+
+```{r}
+qtl.1 <- ggplot(qtl, aes(x = X300, y = pheno.y))
+qtl.1 + geom_point() + xlab("snp 300") +  ylab("Pheno")+ geom_smooth(method=lm)
+```
+
+```{r}
+qtl.2 <- ggplot(qtl, aes(x = X1000, y = pheno.y))
+qtl.2 + geom_point() + xlab("snp 1000") +  ylab("Pheno")+ geom_smooth(method=lm)
+```
+
+```{r}
+lm.qtl.300 <- lm(pheno.y ~ X300, data = qtl)
+summary(lm.qtl.300)
+```
+
+```{r}
+cat("El efecto del snp300 sobre el rasgo cuantitativo 1.8121")
+```
+
+```{r}
+lm.qtl.1000 <- lm(pheno.y ~ X1000, data = qtl)
+summary(lm.qtl.1000)
+```
+
+```{r}
+cat("El efecto del snp1000 sobre el rasgo cuantitativo 1.8549")
+```
+
